@@ -1,0 +1,88 @@
+.login {
+  background-color: #f0f2f5;
+  width: 100%;
+  height: 100vh;
+}
+
+.loginWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.loginWrapper__left {
+  width: 50%;
+}
+
+.loginWrapper__left .loginLogo {
+  font-size: 40px;
+  color: #0091ff;
+  font-weight: bold;
+}
+
+.loginWrapper__left .loginDesc {
+  font-size: 20px;
+}
+
+.loginWrapper__right {
+  padding: 20px 15px;
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.loginWrapper__right-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginWrapper__right-box input {
+  font-size: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  border-color: rgba(194, 182, 182, 0.541);
+}
+
+.loginWrapper__right-box input:focus {
+  outline: none;
+}
+
+.loginWrapper__right-login button {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0091ff;
+  color: white;
+  border-color: #0091ff;
+  font-size: 20px;
+}
+
+.loginWrapper__right-forgot {
+  text-align: center;
+  padding: 10px 0;
+  color: #0091ff;
+  cursor: pointer;
+}
+
+.loginWrapper__right-create {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.loginWrapper__right-create button {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(46, 219, 46);
+  color: white;
+  border-color: rgb(46, 219, 46);
+}

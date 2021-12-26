@@ -1,0 +1,55 @@
+.rightBar {
+  flex: 3;
+  height: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 70px;
+}
+
+.rightBar__friends {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rightBar__friend {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rightBar__friend:hover {
+  background-color: #ddd;
+  transition: 0.3s;
+}
+
+.rightBar__friendImg {
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+
+.rightBar__friendImg img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.rightBar__friendStatus {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid white;
+}
+
+.rightBar__friendName {
+  margin-left: 10px;
+}

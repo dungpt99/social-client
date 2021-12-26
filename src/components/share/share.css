@@ -1,0 +1,76 @@
+.share {
+  -webkit-box-shadow: 0px 0px 1px 3px rgba(214, 214, 214, 0.36);
+  box-shadow: 0px 0px 1px 3px rgba(214, 214, 214, 0.36);
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.share__top {
+  width: 100%;
+  display: flex;
+}
+
+.share__top-img {
+  width: 32px;
+  height: 32px;
+}
+
+.share__top-img img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.share__top-text {
+  margin-left: 10px;
+  border: none;
+  width: 100%;
+}
+.share__top-text:focus {
+  outline: none;
+}
+
+.share__bottom {
+  display: flex;
+}
+
+.share__bottom-options {
+  display: flex;
+  justify-content: space-between;
+  flex: 3;
+}
+
+.share__bottom-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share__bottom-option .option__name {
+  margin-left: 5px;
+}
+
+.share__bottom-btn {
+  flex: 1;
+  text-align: end;
+}
+
+.shareImgContainer {
+  width: 100%;
+  position: relative;
+}
+
+.shareImgContainer img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.shareImgContainer .shareCancelImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.post {
+  -webkit-box-shadow: 0px 0px 1px 3px rgba(214, 214, 214, 0.36);
+  box-shadow: 0px 0px 1px 3px rgba(214, 214, 214, 0.36);
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.postWrapper {
+  width: 100%;
+}
+
+.postWrapper__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postWrapper__topLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postWrapper__topLeft-userImg {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.postWrapper__topLeft-username {
+  margin-left: 5px;
+}
+
+.postWrapper__topLeft-time {
+  margin-left: 5px;
+}
+
+.postWrapper__center-text {
+  margin-top: 10px;
+}
+
+.postWrapper__center-img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.postWrapper__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.postWrapper__bottom-left {
+  display: flex;
+  align-items: center;
+}
+.postWrapper__bottom-left img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.postWrapper__topLeft-username {
+  cursor: pointer;
+  color: #333;
+}
+.postWrapper__bottom-left .left__likeCounter {
+  cursor: pointer;
+}
+
+.postWrapper__bottom-right {
+  cursor: pointer;
+}
