@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dungpt99/social-client/static/css/main.1c5d18c0.chunk.css",
+    "main.js": "/dungpt99/social-client/static/js/main.b96868e6.chunk.js",
+    "main.js.map": "/dungpt99/social-client/static/js/main.b96868e6.chunk.js.map",
+    "runtime-main.js": "/dungpt99/social-client/static/js/runtime-main.4e89c5b8.js",
+    "runtime-main.js.map": "/dungpt99/social-client/static/js/runtime-main.4e89c5b8.js.map",
+    "static/js/2.eef15308.chunk.js": "/dungpt99/social-client/static/js/2.eef15308.chunk.js",
+    "static/js/2.eef15308.chunk.js.map": "/dungpt99/social-client/static/js/2.eef15308.chunk.js.map",
+    "index.html": "/dungpt99/social-client/index.html",
+    "static/css/main.1c5d18c0.chunk.css.map": "/dungpt99/social-client/static/css/main.1c5d18c0.chunk.css.map",
+    "static/js/2.eef15308.chunk.js.LICENSE.txt": "/dungpt99/social-client/static/js/2.eef15308.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e89c5b8.js",
+    "static/js/2.eef15308.chunk.js",
+    "static/css/main.1c5d18c0.chunk.css",
+    "static/js/main.b96868e6.chunk.js"
+  ]
+}
