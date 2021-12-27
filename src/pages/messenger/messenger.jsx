@@ -16,7 +16,7 @@ export default function Messenger() {
   const [arrivalMessage, setArrivalMessage] = useState(null);
   const [onlineUser, setOnlineUser] = useState(null);
   const [socket, setSocket] = useState(
-    io("ws://socialsocketio122021.herokuapp.com")
+    io("wss://socialsocketio122021.herokuapp.com", { secure: true })
   );
 
   const { user } = useContext(AuthContext);
