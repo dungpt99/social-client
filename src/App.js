@@ -47,19 +47,26 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + "/"}>
+        <Route exact path={"https://dungpt99.github.io/social-client/" + "/"}>
           {user ? <Home /> : <Login />}
         </Route>
-        <Route exact path={process.env.PUBLIC_URL + "/register"}>
+        <Route
+          exact
+          path={"https://dungpt99.github.io/social-client/" + "/register"}
+        >
           <Register />
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/login"}>
+        <Route path={"https://dungpt99.github.io/social-client/" + "/login"}>
           {user ? <Redirect to="/" /> : <Login />}
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/profile/:id"}>
+        <Route
+          path={"https://dungpt99.github.io/social-client/" + "/profile/:id"}
+        >
           {user ? <Profile /> : <CircularProgress />}
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/messenger"}>
+        <Route
+          path={"https://dungpt99.github.io/social-client/" + "/messenger"}
+        >
           <Messenger />
         </Route>
       </Switch>
