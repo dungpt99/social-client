@@ -7,7 +7,6 @@ import {
   Route,
   Link,
   Redirect,
-  BrowserRouter,
 } from "react-router-dom";
 import Register from "./pages/register/Register.jsx";
 import axios from "axios";
@@ -48,23 +47,19 @@ function App() {
   return (
     <Router>
       <Switch>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Route exact path={"/"}>
-            {user ? <Home /> : <Login />}
-          </Route>
-          <Route exact path={"/register"}>
-            <Register />
-          </Route>
-          <Route path={"/login"}>
-            {user ? <Redirect to="/" /> : <Login />}
-          </Route>
-          <Route path={"/profile/:id"}>
-            {user ? <Profile /> : <CircularProgress />}
-          </Route>
-          <Route path={"/messenger"}>
-            <Messenger />
-          </Route>
-        </BrowserRouter>
+        <Route exact path="/">
+          {user ? <Home /> : <Login />}
+        </Route>
+        <Route exact path="/register">
+          <Register />
+        </Route>
+        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
+        <Route path="/profile/:id">
+          {user ? <Profile /> : <CircularProgress />}
+        </Route>
+        <Route path="/messenger">
+          <Messenger />
+        </Route>
       </Switch>
     </Router>
   );
