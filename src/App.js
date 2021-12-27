@@ -1,7 +1,7 @@
 import Home from "./pages/home/Home.jsx";
 import Login from "./pages/login/Login.jsx";
 import Profile from "./pages/profile/Profile.jsx";
-import { HashRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
 import Register from "./pages/register/Register.jsx";
 import axios from "axios";
 import { useContext, useEffect } from "react";
@@ -39,23 +39,21 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
-      <Switch>
-        <Route exact path="/">
-          {user ? <Home /> : <Login />}
-        </Route>
-        <Route exact path="/register">
-          <Register />
-        </Route>
-        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
-        <Route path="/profile/:id">
-          {user ? <Profile /> : <CircularProgress />}
-        </Route>
-        <Route path="/messenger">
-          <Messenger />
-        </Route>
-      </Switch>
-    </HashRouter>
+    <Switch>
+      <Route exact path="/">
+        {user ? <Home /> : <Login />}
+      </Route>
+      <Route exact path="/register">
+        <Register />
+      </Route>
+      <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
+      <Route path="/profile/:id">
+        {user ? <Profile /> : <CircularProgress />}
+      </Route>
+      <Route path="/messenger">
+        <Messenger />
+      </Route>
+    </Switch>
   );
 }
 
