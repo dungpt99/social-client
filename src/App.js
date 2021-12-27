@@ -1,13 +1,7 @@
 import Home from "./pages/home/Home.jsx";
 import Login from "./pages/login/Login.jsx";
 import Profile from "./pages/profile/Profile.jsx";
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 import Register from "./pages/register/Register.jsx";
 import axios from "axios";
 import { useContext, useEffect } from "react";
@@ -45,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route exact path="/">
           {user ? <Home /> : <Login />}
@@ -61,7 +55,7 @@ function App() {
           <Messenger />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 

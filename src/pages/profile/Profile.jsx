@@ -67,7 +67,7 @@ export default function Profile() {
         <div className="profile__user">
           <img
             className="profile__userCoverImg"
-            src={user.coverImage || "/assets/person/cat.jpg"}
+            src={user.coverImage || PF + "/assets/person/cat.jpg"}
             alt=""
           />
           <div className="profile__userAvt">
