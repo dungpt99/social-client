@@ -47,17 +47,19 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path={process.env.PUBLIC_URL + "/"}>
           {user ? <Home /> : <Login />}
         </Route>
-        <Route exact path="/register">
+        <Route exact path={process.env.PUBLIC_URL + "/register"}>
           <Register />
         </Route>
-        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
-        <Route path="/profile/:id">
+        <Route path={process.env.PUBLIC_URL + "/login"}>
+          {user ? <Redirect to="/" /> : <Login />}
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/profile/:id"}>
           {user ? <Profile /> : <CircularProgress />}
         </Route>
-        <Route path="/messenger">
+        <Route path={process.env.PUBLIC_URL + "/messenger"}>
           <Messenger />
         </Route>
       </Switch>
