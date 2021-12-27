@@ -90,7 +90,11 @@ export default function Post({ post }) {
         </div>
         <div className="postWrapper__bottom">
           <div className="postWrapper__bottom-left">
-            <img src="/assets/post/heart.png" alt="" onClick={likeHandler} />
+            <img
+              src={PF + "/assets/post/heart.png"}
+              alt=""
+              onClick={likeHandler}
+            />
             <span className="left__likeCounter">{like} people liked it</span>
           </div>
           <div className="postWrapper__bottom-right">10 comments</div>
