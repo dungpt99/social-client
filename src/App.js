@@ -7,6 +7,7 @@ import {
   Route,
   Link,
   Redirect,
+  BrowserRouter,
 } from "react-router-dom";
 import Register from "./pages/register/Register.jsx";
 import axios from "axios";
@@ -47,28 +48,23 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path={"https://dungpt99.github.io/social-client/" + "/"}>
-          {user ? <Home /> : <Login />}
-        </Route>
-        <Route
-          exact
-          path={"https://dungpt99.github.io/social-client/" + "/register"}
-        >
-          <Register />
-        </Route>
-        <Route path={"https://dungpt99.github.io/social-client/" + "/login"}>
-          {user ? <Redirect to="/" /> : <Login />}
-        </Route>
-        <Route
-          path={"https://dungpt99.github.io/social-client/" + "/profile/:id"}
-        >
-          {user ? <Profile /> : <CircularProgress />}
-        </Route>
-        <Route
-          path={"https://dungpt99.github.io/social-client/" + "/messenger"}
-        >
-          <Messenger />
-        </Route>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Route exact path={"/"}>
+            {user ? <Home /> : <Login />}
+          </Route>
+          <Route exact path={"/register"}>
+            <Register />
+          </Route>
+          <Route path={"/login"}>
+            {user ? <Redirect to="/" /> : <Login />}
+          </Route>
+          <Route path={"/profile/:id"}>
+            {user ? <Profile /> : <CircularProgress />}
+          </Route>
+          <Route path={"/messenger"}>
+            <Messenger />
+          </Route>
+        </BrowserRouter>
       </Switch>
     </Router>
   );
